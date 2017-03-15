@@ -25,18 +25,45 @@ padding: 10px;
 	font-family: 'Jura', sans-serif;
 	font-family: 'Syncopate', sans-serif;
 	font-weight: bold;
+	font-size: 90px;
 
 }
 
 /**{
 	background: #ff7bac;
 }*/
+#talkInvite{
+	font-size: 60px;
+	font-family: 'Comfortaa', cursive;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Architects Daughter', cursive;
+	font-family: 'Sat1isfy', cursive;
+	font-family: 'Passion One', cursive;
+	line-height: 3px;
+	color:#FF4136 ;
+	margin-bottom: 2px;
+}
+
+
+/*#giveText{
+	font-size: 30px;
+	color:#FF4136;
+	line-height: 6px;
+
+}*/
+
+#sayText {
+	font-size: 20px;
+	color:#666;
+	
+
+}
 
 .foo {
   float: right;
   width: 30px;
   height: 30px;
-  margin: 7px;
+  margin: 12px;
   border: 5px solid white;
   align-items: right;
 }
@@ -78,19 +105,19 @@ padding: 10px;
 
  /*form*/
  form {
-  position: relative;
-  display: inline-block;
-  max-width: 700px;
-  min-width: 500px;
-  box-sizing: border-box;
-  padding: 30px 25px;
-  background-color: white;
-  border-radius: 40px;
-  margin: 40px 20px;
-  left: 5%;
-  font-family: "Helvetica" , sans-serif;
-  font-weight: light;
-  -webkit-font-smoothing: antialiased
+	  position: relative;
+	  display: inline-block;
+	  max-width: 700px;
+	  min-width: 500px;
+	  box-sizing: border-box;
+	  padding: 30px 25px;
+	  background-color: white;
+	  border-radius: 40px;
+	  margin: 40px 20px;
+	  left: 5%;
+	  font-family: "Helvetica" , sans-serif;
+	  font-weight: light;
+	  -webkit-font-smoothing: antialiased;
 }
 
 #inputText{ 
@@ -101,7 +128,7 @@ padding: 10px;
       line-height: 0;
       font-size: 40px;
       width: 100%;
-      display: block;
+      /*display: block;*/
       box-sizing: border-box;
       padding: 15px 15px;
       border-radius: 60px;
@@ -123,6 +150,7 @@ padding: 10px;
         background: #FF4136;
         color: white;
         margin-top: 30px;
+        margin: 40px 20px;
     }
 
 .question{
@@ -164,6 +192,10 @@ button{
     letter-spacing: 0.01em;
     position: relative;
     z-index: 1;
+	font-size: 30px;
+	color:white;
+	line-height: 6px;
+
 }
 
  button:hover{
