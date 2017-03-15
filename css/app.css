@@ -5,3 +5,65 @@ background-color: blue;
 float: left;
 padding: 10px;
 } */
+
+.callout{
+	background: #FF4136;
+	padding:30px;
+	color: white;
+	text-align: right;
+	border: none;
+	margin-top: 20px;
+}
+	/* removes the border */
+	.x-callout:before{
+    display: none;
+ 
+}
+
+/**{
+	background: #ff7bac;
+}*/
+
+.foo {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin: 7px;
+  border: 5px solid white;
+  align-items: right;
+}
+
+.blue {
+  background: #13b4ff;
+}
+
+.purple {
+  background: #ab3fdd;
+}
+
+.salmon {
+  background: salmon;
+}
+
+.yellow {
+	background: yellow;
+}
+
+.lightgreen {
+	background: lightgreen;
+}
+.lightblue {
+	background: lightblue;
+}
+.orange {
+	background: orange;
+}
+
+.lime {
+	background: #79DC91;
+}
+
+.candycane {
+	background: #E5071F;
+	}
+ 
