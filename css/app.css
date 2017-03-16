@@ -92,9 +92,9 @@ body {
   float: right;
   width: 40px;
   height: 40px;
-  margin-right: 30px;
+  margin-right: 50px;
   border-style: none;
-  color: black;
+  color: white;
 }
 
 .camera:hover #cameraFeel{
@@ -103,7 +103,7 @@ body {
   height: 40px;
   margin-right: 30px;
   border-style: none;
-  color: white;
+  color: black;
 }
 /*#cameraFeel{
 	visibility: hidden;
@@ -182,6 +182,21 @@ body {
    bottom:-40px; 
 } 
 
+.pink{
+  background: #FA40BC;
+}
+
+.pink #pinkFeel{
+	visibility: hidden;	
+}
+
+.pink:hover #pinkFeel {
+   visibility: visible;  
+   position: relative;
+   bottom:-40px; 
+} 
+
+
 .salmon {
   background: salmon;
 }
@@ -253,7 +268,7 @@ body {
 } 
 
 .lime {
-	background: #79DC91;
+	background: #62FA44;
 }
 
 .lime #limeFeel{
@@ -428,7 +443,6 @@ button {
  ul {list-style-type: none;
 box-sizing:border-box;}
  
-
 .yearHeader {
     padding: 0px ;
     width: 100%;
@@ -510,6 +524,13 @@ box-sizing:border-box;}
     text-align: center;
     width: 20px;
    	height: 20px;
+}
+
+#yearInColorHead {
+	font-family: 'Syncopate', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+
 }
 
 /* Add media queries for smaller screens */
