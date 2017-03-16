@@ -5,6 +5,9 @@ background-color: blue;
 float: left;
 padding: 10px;
 } */
+body {
+	background: #FF4136;
+}
 
 .callout{
 	background: #FF4136;
@@ -74,6 +77,16 @@ padding: 10px;
   align-items: right;
 }
 
+.camera{
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+  border-style: none;
+ 
+  color: black;
+}
+
 .box:hover{
         border-radius:40%;
         box-shadow:
@@ -84,24 +97,26 @@ padding: 10px;
         transform: translateX(-3px);
 }
 
-.singleBracket {
-	font-size: 180px;
+/*.singleBracket {
+	font-size: 300px;
+	/*margin: 5px;*/
+	/*transform: rotate(-90deg);
+	visibility: visible;
+	color: black;
+/*	z-index: 1;*/
+/*}*/
+
+/*.bracket /*.singleBracket*/ /*.button*/ /*#yearButton {
+	visibility: hidden;
+
+}*/
+
+/*.bracket*//*.singleBracket*//*:hover .button #yearButton{
+	
+	visibility: visible;  */
 	/*margin: 5px;*/
 	/*transform: rotate(-90deg);*/
-	visibility: hidden;
-}
-
-.singleBracket .button #yearButton {
-	visibility: hidden;
-
-}
-
-.singleBracket:hover .button #yearButton{
-	font-size: 180px;
-	visibility: visible;  
-	/*margin: 5px;*/
-	/*transform: rotate(-90deg);*/
-}
+} 
 /*1.	anxious
 2.	bored
 3.	thoughtful
@@ -117,7 +132,6 @@ padding: 10px;
 .feel {
    color:white;
    font-size: 18px;
-
 }
 
 .blue {
@@ -126,8 +140,8 @@ padding: 10px;
 
 .blue #blueFeel{
 	visibility: hidden;
-
 }
+
 .blue:hover #blueFeel {
    visibility: visible;  
    position: relative;
@@ -247,10 +261,9 @@ padding: 10px;
    bottom:-40px; 
 } 
 
-#yearButton {
-	text-align: center;
-	line-height: 40px;
-	visibility: hidden;
+
+#offCanvasBottom1 {
+	background: white;
 }
 
  /*form*/
@@ -338,7 +351,7 @@ label:focus{
 	z-index: -1;
 }
 
-button{
+button {
    /* @extend .transition*/
     margin-top: 35px;
     background-color: #FF4136;
@@ -359,17 +372,137 @@ button{
 
 }
 
- button:hover{
+ button:hover  {
 		color: white;
       	background-color: salmon;
       	border: 2px solid white;
+   
+}  
       
-
- 	}  
-      
- button:focus{
+ button #getColorButton:focus{
 		color: white;
       	background-color: #FF4136;
+}
 
+#yearButton {
+	clear: both;
+	text-align: center;
+	line-height: 0px;
+	visibility: visible;
+	float:left;
+	background: white;
+	color: #FF4136 ;
+	letter-spacing: .5em;
+	margin-top:2px;
+	border-style: none;
 
- 	}
+}
+
+ #yearButton:hover  {
+		color: white;
+      	background-color: salmon;
+      	border: 2px solid white;
+   
+} 
+
+/* YEAR IN COLOR CALENDAR*/
+ ul {list-style-type: none;
+box-sizing:border-box;}
+ 
+
+.yearHeader {
+    padding: 0px ;
+    width: 100%;
+    background: white;
+    color: black;
+}
+
+.yearHeader ul {
+    margin: 0;
+    padding: 0;
+}
+
+.yearHeader ul li {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    box-sizing:border-box;
+}
+
+.yearHeader .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.yearHeader .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.dekCalendar {
+    margin: 0;
+    padding: 10px 0;
+    background-color: black;
+    box-sizing:border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+.dekCalendar li {
+    display: inline-block;
+    box-sizing:border-box;
+    width: 13.6%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+.days {
+    padding: 10px;
+    background:#FF4136;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    box-sizing:border-box;
+    width: 20px;
+   	height: 20px;
+    text-align: center;
+    margin-bottom: .5px;
+    font-size:12px;
+    color: white;
+    border:1px white solid;
+}
+
+.days li .monthy {
+	list-style-type: none;
+    display: inline-block;
+    background: white;
+    color: black;
+    font-size:15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: .5px;
+    text-align: center;
+    width: 20px;
+   	height: 20px;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
