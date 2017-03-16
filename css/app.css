@@ -28,6 +28,12 @@ padding: 10px;
 	font-size: 90px;
 
 }
+
+#feelSpectrumText {
+	letter-spacing: 1em;
+	line-height: 0;
+
+}
 /**{
 	background: #ff7bac;
 }*/
@@ -61,8 +67,8 @@ padding: 10px;
 
 .box {
   float: right;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   margin: 20px;
   border: 5px solid white;
   align-items: right;
@@ -78,11 +84,23 @@ padding: 10px;
         transform: translateX(-3px);
 }
 
-#singleBracket {
-	float: right;
-	font-size: 100px;
-	margin: 5px;
-	transform: rotate(-90deg);
+.singleBracket {
+	font-size: 180px;
+	/*margin: 5px;*/
+	/*transform: rotate(-90deg);*/
+	visibility: hidden;
+}
+
+.singleBracket .button #yearButton {
+	visibility: hidden;
+
+}
+
+.singleBracket:hover .button #yearButton{
+	font-size: 180px;
+	visibility: visible;  
+	/*margin: 5px;*/
+	/*transform: rotate(-90deg);*/
 }
 /*1.	anxious
 2.	bored
@@ -113,7 +131,7 @@ padding: 10px;
 .blue:hover #blueFeel {
    visibility: visible;  
    position: relative;
-   top:-40px; 
+   bottom:-40px; 
    right: -20px;
 }  
 
@@ -128,7 +146,7 @@ padding: 10px;
 .purple:hover #purpleFeel {
    visibility: visible;  
    position: relative;
-   top:-40px; 
+   bottom:-40px; 
 } 
 
 .salmon {
@@ -142,7 +160,7 @@ padding: 10px;
 .salmon:hover #salmonFeel {
    visibility: visible;  
    position: relative;
-   top:-40px; 
+   bottom:-40px; 
 } 
 
 .yellow {
@@ -156,7 +174,7 @@ padding: 10px;
 .yellow:hover #yellowFeel {
    visibility: visible;  
    position: relative;
-   top:-40px; 
+   bottom:-40px; 
 } 
 
 .lightgreen {
@@ -170,7 +188,7 @@ padding: 10px;
 .lightgreen:hover #lightgreenFeel {
    visibility: visible;  
    position: relative;
-   top:-40px; 
+   bottom:-40px; 
 } 
 
 .lightblue {
@@ -184,7 +202,7 @@ padding: 10px;
 .lightblue:hover #lightblueFeel {
    visibility: visible;  
    position: relative;
-   top:-40px; 
+   bottom:-40px; 
 } 
 
 .orange {
@@ -198,7 +216,7 @@ padding: 10px;
 .orange:hover #orangeFeel {
    visibility: visible;  
    position: relative;
-   top:-40px; 
+   bottom:-40px; 
 } 
 
 .lime {
@@ -212,7 +230,7 @@ padding: 10px;
 .lime:hover #limeFeel {
    visibility: visible;  
    position: relative;
-   top:-40px; 
+   bottom:-40px; 
 } 
 
 .candycane {
@@ -226,8 +244,14 @@ padding: 10px;
 .candycane:hover #candycaneFeel {
    visibility: visible;  
    position: relative;
-   top:-40px; 
+   bottom:-40px; 
 } 
+
+#yearButton {
+	text-align: center;
+	line-height: 40px;
+	visibility: hidden;
+}
 
  /*form*/
  form {
@@ -248,7 +272,7 @@ padding: 10px;
 }
 
 Form:hover{
-	box-shadow: inset 0 0 0 25px #EDEAEB;
+	box-shadow: inset 0 0 0 7px #DEDEDE;
 }
 
 #inputText{ 
@@ -320,7 +344,6 @@ button{
     background-color: #FF4136;
     border: 1px solid #FF4136;
     line-height: 0;
-    font-size: 17px;
     display: inline-block;
     box-sizing: border-box;
     padding: 20px 15px ;
@@ -331,21 +354,22 @@ button{
     position: relative;
     top:20px;
     z-index: 1;
-	font-size: 30px;
-	color:white;
-	line-height: 6px;
+	font-size: 18px;
+	
 
 }
 
  button:hover{
-		color: #666;
+		color: white;
       	background-color: salmon;
-      	border: 4px solid white;
+      	border: 2px solid white;
+      
 
  	}  
       
  button:focus{
 		color: white;
       	background-color: #FF4136;
+
 
  	}

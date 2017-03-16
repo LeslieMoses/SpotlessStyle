@@ -13,7 +13,7 @@
    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Comfortaa|Gloria+Hallelujah|Jura|Kaushan+Script|Passion+One|Satisfy|Syncopate:400,700" rel="stylesheet">
   </head>
   <body>
-        <div class="row">
+    <div class="row">
       <div class="large-12 columns">
         <div class="callout large medium-text-right">
           <h1>How <span style="color:black">You</span> D<span style="color:yellow">o</span>in&rsquo;?</h1>
@@ -32,7 +32,10 @@
           9.  exhausted
           10. satisfied -->
                    <!-- colored boxes #animate -->
-              <div id="singleBracket">&#123;</div>
+              <!-- <div class="box text"><p class="feel" id="textFeel">year in colors</p></div> -->
+              
+              <div id="feelSpectrumText"> feel spectrum
+              </div>
               <div class="box blue"><p class="feel" id="blueFeel">blah!</p><!-- <img id="bluePic" src="css/Images/zzkmki0yh6i-anna-popovic.jpg" alt="fire" width="180"> --> </div>
               <div class="box purple"><p class="feel" id="purpleFeel">anxious!</p></div>
               <div class="box salmon"><p class="feel" id="salmonFeel">exhausted</p></div>
@@ -43,26 +46,50 @@
               <div class="box orange"><p class="feel" id="orangeFeel">confident</p></div>
               <div class="box lime"><p class="feel" id="limeFeel">cold</p></div>
               <div class="box salmon"><p class="feel" id="salmonFeel">satisfied</p></div>
+              
 
            <br><br> 
-                          <!--  -->
+           <div class="large-2 medium-2 columns">               <!--  -->
+                          <button type="button" id="yearButton" data-toggle="offCanvasBottom1">See your year in c<span style="color:yellow">o</span>l<span style="color:skyblue">o</span>r</button>
+           </div>               
+          <div class="large-2 medium-2 columns">
+          <div class="singleBracket">&#123;</div>
+          </div>
+
+         <div class="large-8 medium-8 columns">
           <form>
             <!-- <div class="question"> -->
             <!-- <p id="giveText">+ get your color</p> -->
-            <p id="talkInvite">rant * vent * rejoice </p>
+            <p id="talkInvite">rant * vent * rej<span style="color:yellow">o</span>ice </p>
             <input id="inputText" type="textarea" maxlength="250" required/>
               <!-- Talk to us! :) -->
               <br>
-              <label>How was your day? <span style="color:grey">(250 characters max.)</span></label>
+              <label><!-- How was your day?  --><span style="color:grey">250 characters max.</span></label>
             
             <!-- pour out your <3 (not in use)
             <p id="talkInvite">pour out your <i class="fa fa-heart" aria-hidden="true"></i></p> -->
             <br>
-            <button>+ get your c<span style="color:yellow">o</span>l<span style="color:skyblue">o</span>r</button>
+            <button>+ get your c<span style="color:yellow">o</span>l<span style="color:skyblue">o</span>r from the feel spectrum</button>
             <!-- <p id="sayText">(say what you want :)</p> -->
           </form>
+         </div> 
           <br><br>
     <div class="row">
+      
+
+
+      <!-- trying bottom animation -->
+      <div class="row column">
+        <div class="off-canvas-wrapper">
+          <div class="off-canvas position-bottom" id="offCanvasBottom1" data-off-canvas>
+            <!-- Your menu or Off-canvas content goes here -->
+          </div>
+          <div class="off-canvas-content" data-off-canvas-content>
+            <!-- <img src="css/images/zzkmki0yh6i-anna-popovic.jpg" class="" height="" width="" alt=""> -->
+          </div>
+        </div>
+      </div>
+
             <div class="large-4 medium-4 columns">
               <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
             </div>
@@ -83,7 +110,9 @@
           </div>
         </div>
       </div>
-    </div>
+
+      
+    </div>  <!-- end of main row that includes form -->
 
 
 
