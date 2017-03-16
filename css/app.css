@@ -22,26 +22,26 @@ padding: 10px;
 }
 
 .callout H1{
-	font-family: 'Jura', sans-serif;
+	
 	font-family: 'Syncopate', sans-serif;
 	font-weight: bold;
 	font-size: 90px;
 
 }
-
 /**{
 	background: #ff7bac;
 }*/
 #talkInvite{
-	font-size: 60px;
-	font-family: 'Comfortaa', cursive;
+	font-size: 45px;
 	font-family: 'Gloria Hallelujah', cursive;
 	font-family: 'Architects Daughter', cursive;
-	font-family: 'Sat1isfy', cursive;
+	font-family: 'Jura', sans-serif;
 	font-family: 'Passion One', cursive;
+	font-family: 'Comfortaa', cursive;
 	line-height: 3px;
 	color:#FF4136 ;
 	margin-bottom: 2px;
+	margin-top: 20px;
 }
 
 
@@ -59,58 +59,185 @@ padding: 10px;
 
 }
 
-.foo {
+.box {
   float: right;
-  width: 30px;
-  height: 30px;
-  margin: 12px;
+  width: 45px;
+  height: 45px;
+  margin: 20px;
   border: 5px solid white;
   align-items: right;
+}
+
+.box:hover{
+        border-radius:40%;
+        box-shadow:
+                1px 1px white,
+                2px 2px white,
+                3px 3px white;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+#singleBracket {
+	float: right;
+	font-size: 100px;
+	margin: 5px;
+	transform: rotate(-90deg);
+}
+/*1.	anxious
+2.	bored
+3.	thoughtful
+4.	happy
+5.	lonely
+6.	confident
+7.	cold
+8.	disappointed
+9.	exhausted
+10.	satisfied*/
+
+
+.feel {
+   color:white;
+   font-size: 18px;
+
 }
 
 .blue {
   background: #13b4ff;
 }
 
+.blue #blueFeel{
+	visibility: hidden;
+
+}
+.blue:hover #blueFeel {
+   visibility: visible;  
+   position: relative;
+   top:-40px; 
+   right: -20px;
+}  
+
 .purple {
   background: #ab3fdd;
 }
+
+.purple #purpleFeel{
+	visibility: hidden;	
+}
+
+.purple:hover #purpleFeel {
+   visibility: visible;  
+   position: relative;
+   top:-40px; 
+} 
 
 .salmon {
   background: salmon;
 }
 
+.salmon #salmonFeel{
+	visibility: hidden;	
+}
+
+.salmon:hover #salmonFeel {
+   visibility: visible;  
+   position: relative;
+   top:-40px; 
+} 
+
 .yellow {
 	background: yellow;
 }
 
+.yellow #yellowFeel{
+	visibility: hidden;	
+}
+
+.yellow:hover #yellowFeel {
+   visibility: visible;  
+   position: relative;
+   top:-40px; 
+} 
+
 .lightgreen {
 	background: lightgreen;
 }
+
+.lightgreen #lightgreenFeel{
+	visibility: hidden;	
+}
+
+.lightgreen:hover #lightgreenFeel {
+   visibility: visible;  
+   position: relative;
+   top:-40px; 
+} 
+
 .lightblue {
 	background: lightblue;
 }
+
+.lightblue #lightblueFeel{
+	visibility: hidden;	
+}
+
+.lightblue:hover #lightblueFeel {
+   visibility: visible;  
+   position: relative;
+   top:-40px; 
+} 
+
 .orange {
 	background: orange;
 }
+
+.orange #orangeFeel{
+	visibility: hidden;	
+}
+
+.orange:hover #orangeFeel {
+   visibility: visible;  
+   position: relative;
+   top:-40px; 
+} 
 
 .lime {
 	background: #79DC91;
 }
 
+.lime #limeFeel{
+	visibility: hidden;	
+}
+
+.lime:hover #limeFeel {
+   visibility: visible;  
+   position: relative;
+   top:-40px; 
+} 
+
 .candycane {
 	background: #E5071F;
 	}
- 
+
+.candycane #candycaneFeel{
+	visibility: hidden;	
+}
+
+.candycane:hover #candycaneFeel {
+   visibility: visible;  
+   position: relative;
+   top:-40px; 
+} 
 
  /*form*/
  form {
+	  clear:both;
 	  position: relative;
 	  display: inline-block;
-	  max-width: 700px;
-	  min-width: 500px;
+	  max-width: 600px;
+	  min-width: 600px;
 	  box-sizing: border-box;
-	  padding: 30px 25px;
+	  padding: 30px 20px;
 	  background-color: white;
 	  border-radius: 40px;
 	  margin: 40px 20px;
@@ -118,6 +245,10 @@ padding: 10px;
 	  font-family: "Helvetica" , sans-serif;
 	  font-weight: light;
 	  -webkit-font-smoothing: antialiased;
+}
+
+Form:hover{
+	box-shadow: inset 0 0 0 25px #EDEAEB;
 }
 
 #inputText{ 
@@ -136,7 +267,9 @@ padding: 10px;
       font-weight: 100;
       letter-spacing: 0.01em;
       position: relative;
+      top:60px;
       z-index: 1;
+
   }
 #inputText:hover{
  	/*translate( 0 , -35px );*/
@@ -147,7 +280,7 @@ padding: 10px;
 
 #inputText:focus { 
         outline: none;
-        background: #FF4136;
+        background: salmon;
         color: white;
         margin-top: 30px;
         margin: 40px 20px;
@@ -162,8 +295,8 @@ padding: 10px;
 
 label{
    /*   @extend .transition*/
-      transform-origin: left center;
-      color: #8F8F8F;
+      /*transform-origin: left center;*/
+      color: #FF4136;
       font-weight: 100;
       letter-spacing: 0.01em;
       font-size: 20px;
@@ -171,9 +304,14 @@ label{
       padding: 10px 15px;
       display: block;
       position: absolute;
+      top: 190px;
       margin-top: -80px;
-      z-index: 2;
+      z-index: 1;
       pointer-events: none;
+}
+
+label:focus{
+	z-index: -1;
 }
 
 button{
@@ -191,6 +329,7 @@ button{
     font-weight: 100;
     letter-spacing: 0.01em;
     position: relative;
+    top:20px;
     z-index: 1;
 	font-size: 30px;
 	color:white;
