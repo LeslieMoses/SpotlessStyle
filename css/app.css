@@ -5,6 +5,13 @@
 	float: left;
 	padding: 10px;
 	} */
+/*.page{
+    height:100%;
+    width:100%;
+}*/
+
+
+
 	body {
 		background: #36c3e5;
 		background: #FF4136;
@@ -37,7 +44,9 @@
 	
 	#feelSpectrumText {
 		letter-spacing: 1em;
-		line-height: 0;
+		line-height: 2px;
+		margin-bottom: 6px;
+		text-align: left;
 
 	
 	}
@@ -73,10 +82,10 @@
 	}
 	
 	.box {
-	  float: right;
+	  float: left;
 	  width: 35px;
 	  height: 35px;
-	  margin: 20px;
+	  margin: 5px;
 	  border: 5px solid white;
 	  align-items: right;
 	}
@@ -100,7 +109,7 @@
 	  padding:0px;
 	  border-style: none;
 	  color: white;
-	  font-size: 320px;
+	  font-size: 400px;
 	}
 	
 #cameraFeel:hover{
@@ -110,7 +119,7 @@
 	  margin-right: 80px;
 	  padding:0px;
 	  border-style: none;
-	  font-size: 320px;
+	  font-size: 400px;
 	  color: #666;
 
 	}
@@ -132,7 +141,7 @@
   margin-right: 50px;
   padding:0px;
   color: white;
-  font-size: 320px;
+  font-size: 400px;
   
 }
 
@@ -143,12 +152,12 @@
 	  margin-right: 80px;
 	  padding:0px;
 	  border-style: none;
-	  font-size: 320px;
+	  font-size: 400px;
 	  color: #8F8F8F;
 	}
 
 #textCamera {
-	font-size: 25px;
+	font-size: 30px;
 	color:white;
 	padding-left: none;
 	text-align: center;
@@ -158,7 +167,7 @@
 }
 
 #textPencil {
-	font-size: 25px;
+	font-size: 30px;
 	color:white;
 	padding-left: none;
 	text-align: center;
@@ -506,6 +515,20 @@ Form:hover{
 	      	border: 2px solid white;
 	   
 	} 
+/*ALMOST WORKS HERE HERE */
+/*#yearButton:hover */
+/*.position-bottom {
+
+	 height:100%;   
+} 
+*/
+
+/*MY VERSION.off-canvas-wrapper 
+
+	STACKOVERFLOW SUGGESTIONS 
+	.off-canvas-wrap,.inner-wrap{
+    height:100%;   
+}*/
 	
 	/* YEAR IN COLOR CALENDAR*/
 	 ul {list-style-type: none;
