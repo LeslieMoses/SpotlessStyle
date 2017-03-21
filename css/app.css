@@ -9,8 +9,14 @@
     height:100%;
     width:100%;
 }*/
-
-
+/*body,html{
+    height:100%;
+    width:100%;
+}
+*/.off-canvas-content
+{
+  overflow: hidden;
+}
 
 	body {
 		background: #36c3e5;
@@ -64,8 +70,39 @@
 		color:#FF4136 ;
 		margin-bottom: 2px;
 		margin-top: 20px;
+		background: white;
+		border-radius:40%;
+	}
+
+		#selfieInvite{
+		font-size: 60px;
+		font-family: 'Gloria Hallelujah', cursive;
+		font-family: 'Architects Daughter', cursive;
+		font-family: 'Jura', sans-serif;
+		font-family: 'Passion One', cursive;
+		font-family: 'Comfortaa', cursive;
+		line-height: 3px;
+		color:#FF4136 ;
+		margin-bottom: 2px;
+		margin-top: 20px;
+		background: white;
+		border-radius:40%;
+		text-align: right;
+	}
+
+	#keepButton {
+	/*	float:left;*/
+
+	}
+
+	#deleteButton {
+/*float:left;*/
 	}
 	
+	#storeTxtButton {
+/*float:left;*/
+
+	}
 	
 	/*#giveText{
 		font-size: 30px;
@@ -120,7 +157,13 @@
 	  padding:0px;
 	  border-style: none;
 	  font-size: 400px;
-	  color: #666;
+	  color: #13b4ff;
+
+	}
+
+	#smCamera {
+	color:black;
+	text-align: right;
 
 	}
 	/*#cameraFeel{
@@ -153,7 +196,7 @@
 	  padding:0px;
 	  border-style: none;
 	  font-size: 400px;
-	  color: #8F8F8F;
+	  color: #62FA44;
 	}
 
 #textCamera {
@@ -175,6 +218,22 @@
 		margin-top: 30px;
 }
 
+   #selfieCapture {
+      clear:both;
+      position: relative;
+      display: inline-block;
+      max-width: 500px;
+      min-width: 500px;
+      height: 400px;
+      box-sizing: border-box;
+      padding: 30px 20px;
+      background-color: white;
+      border-radius: 40px;
+      margin: 40px 20px;
+      font-family: "Helvetica" , sans-serif;
+     
+     
+  }
 /*	margin-top: 0;
 	padding: none;
 
@@ -378,12 +437,15 @@
 	}
 	
 	 /*form*/
-	 form {
+
+
+		 form {
 		  clear:both;
 		  position: relative;
 		  display: inline-block;
 		  max-width: 500px;
 		  min-width: 500px;
+		  height: 350px;
 		  box-sizing: border-box;
 		  padding: 30px 20px;
 		  background-color: white;
@@ -463,14 +525,14 @@ Form:hover{
 	
 	button {
 	   /* @extend .transition*/
-	    margin-top: 35px;
+	    margin-top: 20px;
 	    background-color: #FF4136;
 	    border: 1px solid #FF4136;
 	    line-height: 0;
 	    display: inline-block;
 	    box-sizing: border-box;
 	    padding: 20px 15px ;
-	    border-radius: 60px;
+/*	    border-radius: 60px;*/
 	    color: white;
 	    font-weight: 100;
 	    letter-spacing: 0.4em;
@@ -493,6 +555,12 @@ Form:hover{
 	 button #getColorButton:focus{
 			color: white;
 	      	background-color: #FF4136;
+	}
+
+	#backTop {
+		background: white
+		color: #666;
+		margin-top: 10px;
 	}
 	
 	#yearButton {
@@ -517,12 +585,11 @@ Form:hover{
 	} 
 /*ALMOST WORKS HERE HERE */
 /*#yearButton:hover */
-/*.position-bottom {
+/*.off-canvas-wrapper .position-bottom {
 
 	 height:100%;   
 } 
 */
-
 /*MY VERSION.off-canvas-wrapper 
 
 	STACKOVERFLOW SUGGESTIONS 
@@ -622,6 +689,7 @@ Form:hover{
 		font-family: 'Syncopate', sans-serif;
 		font-weight: bold;
 		font-size: 30px;
+		color: #666;
 	
 	}
 	
